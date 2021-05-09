@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form </title>
+</head>
+<body>
+<h1>
+    Current login user : {{ request.user }}
+    <br>
+    This is registration form
+    <br>
+
+    {% for e in employee %}
+        <b> {{e.name }}</b><br>
+        <b> {{e.age }}</b><br>
+        <b> {{e.gender }}</b><br>
+    <p>---------------------------------------------------</p>
+    {% endfor %}
+</h1>
+</body>
+</html>
